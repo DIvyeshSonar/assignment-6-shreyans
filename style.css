@@ -1,0 +1,2503 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+@font-face{
+    font-family: 'Reckless';
+    src: url('./font/RecklessCondensedM-TRIAL-Thin.otf') format('opentype');
+}
+
+#header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #faf8eb;
+}
+
+#header .img1{
+    width: 100%;
+    height:47vw;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+    object-fit:fill;
+    border: 1px solid black;
+}
+
+.nav{
+    position: fixed;
+    z-index: 999;
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px 30px;
+    border: 1px solid black;
+    height: 65px;
+    width: 98%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    white-space: nowrap;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 15px;
+    
+}
+
+.nav .icon{
+    height: 60px;
+    width: 65px;
+    margin-right: -30px;
+    object-fit: fill;
+    margin-top: -15px;
+    
+}
+
+.nav h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 11px;
+    align-items:end;
+    justify-content:flex-start;
+    margin-top: 5px;
+    margin-left: 0px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight: 600;
+}
+
+.nav .right-nav{
+    margin-top: -10px;
+    margin-right: 85px;
+}
+
+.txt{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-family: 'reckless',sans-serif;
+    font-size: 17px;
+    font-weight: -100;
+    letter-spacing: 0.4px;
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mtxt{
+    position: absolute;
+    top: 300px;
+    right: 980px;
+    gap:20px;
+    display: flex;
+    flex-direction: column;
+    
+    font-family: 'Reckless', serif;
+    overflow: hidden;
+}
+
+.mtxt h1{
+    font-size: 89px;
+    color: aliceblue;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.mtxt p{
+    font-size: 18px;
+    color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.mtxt button{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #2a2857;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+
+.mtxt button:hover{
+    background-color: white;
+    color: #2a2857;
+}
+
+#explore{
+    height: 162%;
+    width: 100%;
+    background-color: #faf8eb;
+    margin-top:-15px;
+    
+}
+    
+
+
+.title h1{
+    font-family: 'Reckless', serif;
+    font-size: 58px;
+    font-weight: 600;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    margin-bottom: -100px;
+    padding-top: 100px;
+    
+}
+
+.products{
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    padding: 50px;
+    margin-top:200px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+   
+}
+.products::-webkit-scrollbar{
+    display: none; 
+}
+
+.card{
+    min-width: 400px;
+    flex-shrink: 0;
+}
+
+.img-box{
+    height: 340px;
+    width: 340px;
+    background: #b7e08b;
+    border: 1px solid black;
+    border-radius: 25px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box span{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 8px 12px;
+    border: 1px solid black;
+    background: white;
+    border-radius: 5px;
+}
+
+.img-box img{
+    width: 280px;
+    object-fit: contain;
+}
+
+.card h2{
+    font-family:'reckless',sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.card h4{
+    font-family:'reckless',sans-serif;
+    margin: 15px 0;
+}
+
+.card p{
+    font-family:'reckless',sans-serif;
+    color: gray;
+    max-width: 350px;
+}
+
+.img-box2{
+    height: 340px;
+    width: 340px;
+    background: #b7e08b;
+    border: 1px solid black;
+    border-radius: 25px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box2 span{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 8px 12px;
+    border: 1px solid black;
+    background: white;
+    border-radius: 5px;
+}
+
+.img-box2 img{
+    width: 280px;
+    object-fit: contain;
+}
+
+.card h2{
+    font-family:'reckless',sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.card h4{
+    font-family:'reckless',sans-serif;
+    margin: 15px 0;
+}
+
+.card p{
+    font-family:'reckless',sans-serif;
+    color: gray;
+    max-width: 350px;
+}
+
+.img-box3{
+    height: 340px;
+    width: 340px;
+    background: #b7e08b;
+    border: 1px solid black;
+    border-radius: 25px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box3 span{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 8px 12px;
+    border: 1px solid black;
+    background: white;
+    border-radius: 5px;
+}
+
+.img-box3 img{
+    width: 280px;
+    object-fit: contain;
+}
+
+.card h2{
+    font-family:'reckless',sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.card h4{
+    font-family:'reckless',sans-serif;
+    margin: 15px 0;
+}
+
+.card p{
+    font-family:'reckless',sans-serif;
+    color: gray;
+    max-width: 350px;
+}
+
+.img-box4{
+    height: 340px;
+    width: 340px;
+    background: #b7e08b;
+    border: 1px solid black;
+    border-radius: 25px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box4 span{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 8px 12px;
+    border: 1px solid black;
+    background: white;
+    border-radius: 5px;
+}
+
+.img-box4 img{
+    width: 280px;
+    object-fit: contain;
+}
+
+.card h2{
+    font-family:'reckless',sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.card h4{
+    font-family:'reckless',sans-serif;
+    margin: 15px 0;
+}
+
+.card p{
+    font-family:'reckless',sans-serif;
+    color: gray;
+    max-width: 350px;
+}
+
+.img-box5{
+    height: 340px;
+    width: 340px;
+    background: #b7e08b;
+    border: 1px solid black;
+    border-radius: 25px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box5 span{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 8px 12px;
+    border: 1px solid black;
+    background: white;
+    border-radius: 5px;
+}
+
+.img-box5 img{
+    width: 280px;
+    object-fit: contain;
+}
+
+.card h2{
+    font-family:'reckless',sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.card h4{
+    font-family:'reckless',sans-serif;
+    margin: 15px 0;
+}
+
+.card p{
+    font-family:'reckless',sans-serif;
+    color: gray;
+    max-width: 350px;
+}
+
+.img-box6{
+    height: 340px;
+    width: 340px;
+    background: #b7e08b;
+    border: 1px solid black;
+    border-radius: 25px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box6 span{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 8px 12px;
+    border: 1px solid black;
+    background: white;
+    border-radius: 5px;
+}
+
+.img-box6 img{
+    width: 280px;
+    object-fit: contain;
+}
+
+.card h2{
+    font-family:'reckless',sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.card h4{
+    font-family:'reckless',sans-serif;
+    margin: 15px 0;
+}
+
+.card p{
+    font-family:'reckless',sans-serif;
+    color: gray;
+    max-width: 350px;
+}
+
+.img-box7{
+    height: 340px;
+    width: 340px;
+    background: #b7e08b;
+    border: 1px solid black;
+    border-radius: 25px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box7 span{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 8px 12px;
+    border: 1px solid black;
+    background: white;
+    border-radius: 5px;
+}
+
+.img-box7 img{
+    width: 280px;
+    object-fit: contain;
+}
+
+.card h2{
+    font-family:'reckless',sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.card h4{
+    font-family:'reckless',sans-serif;
+    margin: 15px 0;
+}
+
+.card p{
+    font-family:'reckless',sans-serif;
+    color: gray;
+    max-width: 350px;
+}
+
+.img-box8{
+    height: 340px;
+    width: 340px;
+    background: #b7e08b;
+    border: 1px solid black;
+    border-radius: 25px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box8 span{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 8px 12px;
+    border: 1px solid black;
+    background: white;
+    border-radius: 5px;
+}
+
+.img-box8 img{
+    width: 280px;
+    object-fit: contain;
+}
+
+.card h2{
+    font-family:'reckless',sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.card h4{
+    font-family:'reckless',sans-serif;
+    margin: 15px 0;
+}
+
+.card p{
+    font-family:'reckless',sans-serif;
+    color: gray;
+    max-width: 350px;
+}
+
+
+
+#scrl .products{
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+#scrl::-webkit-scrollbar{
+    display: none;
+}
+
+.set{
+    transition: all 0.3s ease;
+}
+
+.set:hover{
+     transform: scale(1.08);
+}
+
+.btn button{
+    position: absolute;
+    height: 60px;
+    width: 220px;
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+    border-radius: 9px;
+    letter-spacing: 1px;
+    z-index: 200;
+    transform: translateX(290%) rotate(-5deg);
+    background-color: #daaeeb;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding-top: 0px;
+    margin-top: 160px;
+    
+    margin-left: 0px;
+
+}
+
+.lstbtn{
+    display:flex;
+    justify-content:center;
+    margin-top:60px;
+    padding-bottom: 120px;
+}
+
+
+
+.lstbtn button{
+    position: static;
+    height: 50px;
+    width: 250px;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 40px;
+    border-radius: 30px;
+    background-color: #2a2857;
+    color: white;
+    cursor: pointer;
+    transition: 0.3sec ease;
+     
+}
+
+.lstbtn button:hover{
+    background-color:white ;
+    color: #2a2857;
+    
+}
+
+.add-btn button{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+
+    padding: 6px 10px;
+    border: 1px solid black;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.img-box,
+.img-box2,
+.img-box3,
+.img-box4,
+.img-box5,
+.img-box6,
+.img-box7,
+.img-box8{
+    position: relative;
+}
+
+.rating h1{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    display: flex;
+
+    font-family:  sans-serif;
+    font-size: 13px;
+    margin-top: -145px;
+    margin-left: -17px;
+    font-weight: 200;
+}
+
+.rating h2{
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    display: flex;
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: -151px;
+    margin-left: -37px;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin-top: 0px;
+}
+
+#discover{
+    height: 134vh;
+    width: 100%;
+    background-color: #faf8eb;
+}
+
+#discover .disc button{
+    position: absolute;
+    height: 72px;
+    width: 200px;
+    font-size: 50px;
+    background-color: #ff8030;
+    font-family: 'Anton', sans-serif;
+    color: black;
+    border-radius: 5px;
+    letter-spacing: 1.2px;
+    margin-top: 150px;
+    margin-left: 200px;
+    transform: rotate(-5deg);
+}
+
+.typ h1{
+    position: absolute;
+    font-family:  'Reckless', serif;
+    font-size: 60px;
+    margin-top: 250px;
+    margin-left: 200px;
+    font-weight: 500;
+}
+
+.txt input{
+    height: 85px;
+    width:390px;
+    margin-top: 4000px;
+    border-radius: 10px;
+    background-color: #faf8eb;
+    font-size: 42px;
+    font-family:'Reckless', serif ;
+    margin-left: 168px;
+    border: 1px solid black;
+}
+
+.or p{
+    position: absolute;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 600px;
+    margin-left: 205px;
+}
+
+.btna button{
+    position: absolute;
+    height: 50px;
+    width: 220px;
+    font-family:'Reckless', serif ;
+    font-size:36px;
+    background-color: #d9e9ff; 
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 640px;
+    margin-left: 210px;
+}
+
+.btnb button{
+    position: absolute;
+    height: 50px;
+    width: 220px;
+    font-family:'Reckless', serif ;
+    font-size:36px;
+    background-color: #d9e9ff; 
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 640px;
+    margin-left: 440px;
+}
+
+.btnc button{
+    position: absolute;
+    height: 50px;
+    width: 220px;
+    font-family:'Reckless', serif ;
+    font-size:36px;
+    background-color: #d9e9ff; 
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 640px;
+    margin-left: 670px;
+}
+
+.btnd button{
+    position: absolute;
+    height: 50px;
+    width: 150px;
+    font-family:'Reckless', serif ;
+    font-size:36px;
+    background-color: #d9e9ff; 
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 640px;
+    margin-left: 900px;
+}
+
+.btne button{
+    position: absolute;
+    height: 50px;
+    width: 190px;
+    font-family:'Reckless', serif ;
+    font-size:36px;
+    background-color: #d9e9ff; 
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 640px;
+    margin-left: 1060px;
+}
+
+.btnf button{
+    position: absolute;
+    height: 50px;
+    width: 260px;
+    font-family:'Reckless', serif ;
+    font-size:36px;
+    background-color: #d9e9ff; 
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 700px;
+    margin-left: 210px;
+}
+
+.btng button{
+    position: absolute;
+    height: 50px;
+    width: 170px;
+    font-family:'Reckless', serif ;
+    font-size:36px;
+    background-color: #d9e9ff; 
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 700px;
+    margin-left: 480px;
+}
+
+.btnh button{
+    position: absolute;
+    height: 50px;
+    width: 130px;
+    font-family:'Reckless', serif ;
+    font-size:36px;
+    background-color: #d9e9ff; 
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 700px;
+    margin-left: 660px;
+}
+
+.btni button{
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    font-family:'Reckless', serif ;
+    font-size:36px;
+    background-color: #d9e9ff; 
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 700px;
+    margin-left: 800px;
+}
+
+.btnj button{
+    position: absolute;
+    height: 50px;
+    width: 150px;
+    font-family:'Reckless', serif ;
+    font-size:36px;
+    background-color: #d9e9ff; 
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 700px;
+    margin-left: 910px;
+}
+
+.btnk button{
+    position: absolute;
+    height: 50px;
+    width: 160px;
+    font-family:'Reckless', serif ;
+    font-size:36px;
+    background-color: #d9e9ff; 
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 700px;
+    margin-left: 1070px;
+}
+
+.btnl button{
+    position: absolute;
+    height: 50px;
+    width: 190px;
+    font-family:'Reckless', serif ;
+    font-size:36px;
+    background-color: #d9e9ff; 
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 760px;
+    margin-left: 210px;
+}
+
+.btnm button{
+    position: absolute;
+    height: 50px;
+    width: 130px;
+    font-family:'Reckless', serif ;
+    font-size:36px;
+    background-color: #d9e9ff; 
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 760px;
+    margin-left: 410px;
+}
+
+.btnn button{
+    position: absolute;
+    height: 50px;
+    width: 220px;
+    font-family:'Reckless', serif ;
+    font-size:36px;
+    background-color: #d9e9ff; 
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 760px;
+    margin-left: 550px;
+}
+
+.btno button{
+    position: absolute;
+    height: 50px;
+    width: 190px;
+    font-family:'Reckless', serif ;
+    font-size:36px;
+    background-color: #d9e9ff; 
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 760px;
+    margin-left: 780px;
+}
+
+.btnp button{
+    position: absolute;
+    height: 50px;
+    width: 210px;
+    font-family:'Reckless', serif ;
+    font-size:36px;
+    background-color: #d9e9ff; 
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 760px;
+    margin-left: 980px;
+}
+
+#origins .bg-img{
+    position: absolute;
+    height: 200%;
+    width:100%;
+    
+}
+
+#origins .icon{
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    justify-content: right;
+    align-content:end ;
+    margin-left:1300px ;
+    margin-top: 20px;
+}
+ 
+.txt-1 h1{
+    position: absolute;
+    font-family: 'Anton', sans-serif;
+    font-size: 135px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 3px;
+    margin-top: 440px;
+    margin-left: 750px;
+    transform: translate(-50%, -50%);
+    font-weight: 100;
+}
+
+.txt-2 p{
+    position: absolute;
+    font-family:'Reckless', serif ;
+    font-size: 37px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 700px;
+    margin-left: 750px;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    
+}
+
+.svg{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    transform: translate(-50%, -50%);
+    margin-top: 900px;
+    margin-left: 790px;
+    gap:50px;
+}
+
+.btn-9 button{
+    position: absolute;
+    height: 50px;
+    width: 250px;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 1040px;
+    margin-left: 640px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #2a2857;
+    cursor: pointer;
+    transition: 0.3sec ease; 
+    border: none;
+}
+
+.btn-9 button:hover{
+    background-color:#2a2857;
+    color: white;
+    
+}
+
+.btn-12 button{
+    position: absolute;
+    height: 72px;
+    width: 270px;
+    font-size: 54px;
+    font-weight: 200;
+    background-color: #a2c9fc;
+    font-family: 'Anton', sans-serif;
+    border-radius: 5px;
+    letter-spacing: 1.2px;
+    margin-top: 100px;
+    margin-left: 600px;
+    transform: rotate(-5deg);
+    
+}
+
+#reviews{
+    
+    height: 205%;
+    width: 100%;
+    background-color: #faf8eb;
+    
+} 
+
+.btn-11 button{
+    position: static;
+    height: 70px;
+    width: 190px;
+    font-size: 50px;
+    font-weight: 200;
+    background-color:#74bd26;
+    font-family: 'Anton', sans-serif;
+    border-radius: 5px;
+    letter-spacing: 1.2px;
+    margin-top: 1350px;
+    margin-left: 200px;
+    transform: rotate(-2deg);
+}
+
+.txt-rev h1{
+    position: static;
+    font-family:  'Reckless', serif;
+    font-size: 65px;
+    margin-top: 20px;
+    margin-left: 200px;
+    font-weight: 500;
+    line-height: -200px;
+}
+
+.review-container{
+    display:flex;
+    gap:20px;
+    padding:50px;
+    margin-top:50px;
+    overflow-x:auto;
+    scrollbar-width:none;
+}
+
+.review-container::-webkit-scrollbar{
+    display:none;
+}
+
+.review-card{
+    width:340px;
+    height:580px;
+    border:1px solid #222;
+    border-radius:18px;
+    padding:14px;
+    flex-shrink:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.peach{
+    background:#e8a47f;
+}
+
+.green{
+    background:#a5d76f;
+}
+
+.yellow{
+    background:#f1cc63;
+}
+
+.review-text{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+}
+
+.review-text h2{
+    font-family:'Reckless', serif;
+    font-size:34px;
+    line-height:1.25;
+    font-weight:500;
+}
+
+.review-text p{
+    margin-top:25px;
+    font-size:18px;
+    color:#555;
+    font-family:sans-serif;
+}
+
+.product-box{
+    height:132px;
+    border:1px solid #222;
+    border-radius:16px;
+    display:flex;
+    align-items:center;
+    padding:15px;
+}
+
+.orange{
+    background:#eb6c3e;
+}
+
+.darkgreen{
+    background:#77c21e;
+}
+
+.gold{
+    background:#ffbc00;
+}
+
+.tea-green{
+    background:#8ec343;
+}
+
+.product-box img{
+    width:55px;
+    object-fit:contain;
+}
+
+.product-box h3{
+    flex:1;
+    margin-left:18px;
+    font-family:sans-serif;
+    font-size:15px;
+    line-height:1.1;
+    font-weight:500;
+}
+
+.product-box button{
+    width:90px;
+    height:62px;
+    border-radius:40px;
+    border:1px solid #222;
+    background:white;
+    font-size:18px;
+    cursor:pointer;
+}
+
+#cafe-dec{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #2a2857;
+   
+}
+
+.img .imgg{
+    position: absolute;
+    width:50%;
+    height: 100%;
+    
+}
+
+.txt-00 h1{
+    font-family:'Reckless', serif ;
+    font-size: 90px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    position: absolute;
+    color:white;
+    margin-left: 810px;
+    margin-top: 170px;
+}
+
+.txt-00 h2{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    position: absolute;
+    color:white;
+    margin-left: 810px;
+    margin-top: 400px;
+}
+
+.txt-00 button{
+      position: absolute;
+    height: 50px;
+    width: 200px;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 810px;
+    margin-top: 500px;
+    border-radius: 30px;
+    background-color: white;
+    color: #2a2857;
+    cursor: pointer;
+    transition: 0.3sec ease;
+     
+}
+
+.txt-00 button:hover{
+    background-color:#2a2857 ;
+    color: white;
+    
+}
+
+#lattes{
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    margin-top: 732px;
+    background-color: #9e6429;
+}
+
+#lattes .icon-111{
+    position: absolute;
+    width:150px;
+    height: 150px;
+    margin-left: 1220px;
+}
+
+.discrip h1{
+    position: absolute;
+    font-family: 'Anton', sans-serif;
+    font-size: 80px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 100;
+    margin-left: 255px;
+    margin-top: 170px;
+}
+
+.discrip p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    position: absolute;
+    margin-left: 665px;
+    margin-top: 290px;
+    color: white;
+    font-weight: 600;
+}
+
+.discrip .b-1 button{
+    position: absolute;
+    margin-left: 650px;
+    margin-top: 110px;
+    font-family: 'Anton', sans-serif;
+    font-size: 47px;
+    background-color: #ffcb96;
+    width: 230px;
+    height: 65px;
+    border-radius: 7px;
+    transform: rotate(-2deg);
+    letter-spacing: 1px;
+    font-weight: 300px;
+}
+
+#pro-cat{
+    position: absolute;
+    height: auto;
+    width:fit-content;
+    display: flex;
+    flex-direction:row ;
+    overflow-x: scroll;
+    overflow: hidden;
+}
+
+.cho-card{
+    
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding:100px 120px;
+    height: 455px;
+    width:1453px;
+    border-radius: 10px;
+    background-color: #ffcb96;
+    margin-top: 400px;
+    margin-left: 30px;
+}
+
+.pr-img{
+    position: absolute;
+    height: 500px;
+    width: 700px;
+    margin-top: -300px;
+    margin-left: -100px;
+}
+
+.discrip-12 h1{
+    position: absolute;
+    font-family: 'Reckless', serif ;
+    font-size: 75px;
+    color: black;
+    letter-spacing: 0px;
+    font-weight: 500;
+    margin-left: 660px;
+    margin-top: -100px;
+}
+
+.discrip-12 p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    position: absolute;
+    margin-left: 665px;
+    margin-top: 70px;
+    color: black;
+    font-weight: 400;
+}
+
+.discrip-12 .b-12 button{
+    position: absolute;
+    margin-left: 660px;
+    margin-top: -170px;
+    font-family: 'Anton', sans-serif;
+    font-size: 47px;
+    background-color: #f09f54;
+    width: 100px;
+    height: 65px;
+    border-radius: 7px;
+    transform: rotate(-2deg);
+    letter-spacing: 1px;
+    font-weight: 300px;
+}
+
+.txt-001 button{
+      position: absolute;
+    height: 40px;
+    width: 150px;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-left: 660px;
+    margin-top: 150px;
+    border-radius: 30px;
+    background-color: white;
+    color: #000004;
+    cursor: pointer;
+    transition: 0.3sec ease;
+     
+}
+
+.txt-001 button:hover{
+    background-color:#2a2857 ;
+    color: white;
+    
+}
+
+#journal{
+    position: absolute;
+    width:100%;
+    height: 120%;
+    padding:80px 40px;
+    margin-top: 1700px;
+}
+
+#journal h1{
+    font-family:'Reckless', serif;
+    font-size:60px;
+    font-weight:300;
+    max-width:900px;
+    margin:0 auto 90px;
+    margin-left: 290px;
+}
+
+
+.card-containerr{
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+    overflow-y:hidden;
+    scroll-behavior:smooth;
+    padding-bottom:20px;
+}
+
+.card-containerr::-webkit-scrollbar{
+    height:10px;
+     display: none;
+}
+
+.card-containerr::-webkit-scrollbar-thumb{
+    background:#999;
+    border-radius:20px;
+}
+
+.card-11{
+    min-width:220px;
+    border:1px solid #222;
+    border-radius:15px;
+    overflow:hidden;
+    flex-shrink:0;
+    background:#b8cbe8;
+}
+
+.card-11 img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    display:block;
+}
+
+.card-11 p{
+    padding:15px;
+    font-size:22px;
+    font-family:'Reckless', serif;
+    border-top: 1px solid black;
+}
+
+.jou-1 button{
+    position: absolute;
+    margin-left: -1775px;
+    margin-top: -290px;
+    font-family: 'Anton', sans-serif;
+    font-size: 47px;
+    background-color: #f09f54;
+    width: 180px;
+    height: 64px;
+    border-radius: 7px;
+    transform: rotate(-2deg);
+    letter-spacing: 1px;
+    font-weight: 300px;
+}
+
+.btn-07 button{
+    position: absolute;
+    height: 40px;
+    width: 250px;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-left: -1490px;
+    margin-top: 470px;
+    border-radius: 30px;
+    background-color: white;
+    color: #000004;
+    cursor: pointer;
+    transition: 0.3sec ease;
+}
+
+.btn-07 button:hover{
+    background-color:#2a2857 ;
+    color: white;
+    
+}
+
+#great .im-1{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    margin-top: 2590px;
+    border-bottom: 1px solid black;
+}
+
+#great .contain{
+    position: absolute;
+    width:430px;
+    height: 570px;
+    background-color: #f26411;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 2640px;
+    margin-left: 27px;
+    border-radius: 10px;
+    border: 1px solid black;
+
+}
+
+.contain h1{
+    position: absolute;
+    font-family: 'Reckless', serif ;
+    font-size: 55px;
+    color: white;
+    letter-spacing: 0px;
+    font-weight: 500;
+    margin-left: -140px;
+    margin-top: -300px;
+}
+
+.contain p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    position: absolute;
+    margin-left: -65px;
+    margin-top: 300px;
+    color: white;
+    font-weight: 400;
+}
+
+.bc-1 button{
+    position: absolute;
+    height: 40px;
+    width: 150px;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-left: 84px;
+    margin-top: 3120px;
+    border-radius: 30px;
+    background-color: white;
+    color: #2a2857;
+    cursor: pointer;
+    transition: 0.3sec ease;
+     
+}
+
+.bc-1 button:hover{
+    background-color:#2a2857 ;
+    color: white;
+    
+}
+
+#footer{
+    position:absolute;
+    height: 180%;
+    width: 100%;
+    background-color: #bfdbff;
+    margin-top: 3249px;
+    
+}
+
+.footer-top h2{
+    font-size:27px;
+    font-weight:300;
+    font-family:'Anton', sans-serif;
+    margin-bottom:15px;
+    margin-left: 400px;
+    margin-top: 80px;
+}
+
+.footer-top p{
+    font-size:28px;
+    margin-bottom:20px;
+    font-family: 'Reckless', serif ;
+    color: gray;
+    margin-left: 400px;
+}
+
+.footer-top input{
+    width:20%;
+    height:40px;
+    border:1px solid #444;
+    border-radius:10px;
+    padding:0 20px;
+    font-size:15px;
+    outline:none;
+    margin-left: 400px;
+}
+
+.footer-top button{
+    width:10%;
+    height:40px;
+    margin-top:12px;
+    border-radius:40px;
+    border:2px solid #111;
+    background:#2e2b66;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+}
+
+.social-icons{
+    display:flex;
+    gap:10px;
+    margin:25px 0;
+    margin-left: 970px;
+    margin-top: -37px;
+}
+
+.social-icons a{
+    width:35px;
+    height:35px;
+    border:1.5px solid #222;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:black;
+    font-size:18px;
+    text-decoration:none;
+}
+
+.accordion-box{
+    background:#2e2b66;
+    border-radius:15px;
+    padding:10px 20px;
+    margin-left: 65px;
+    margin-right: 65px;
+    margin-top: 80px;
+}
+
+.accordion-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+    font-size:22px;
+    padding:18px 0;
+}
+
+.accordion-item i{
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    background:#b7cbe8;
+    color:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:14px;
+}
+
+.footer-side .logo{
+    position: absolute;
+    height: 100px;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 632px;
+    margin-top: 50px;
+}
+
+.footer-img .f-img{
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    margin-top: 140px;
+}
+
+.footer-info p{
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+    font-size: 9px;
+    color: grey;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-left: 700px;
+    margin-top: 440px;
+}
+
+p a{
+    font-family: 'Reckless',sans-serif;
+    font-size: 10px;
+    color: #605e5e;   
+    text-decoration: none; 
+    text-transform: lowercase;
+}
+
+/* --- Responsive & Hamburger Menu styling --- */
+
+/* Hide hamburger by default on desktop */
+.nav .hamburger {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    /* 1. Navigation & Hamburger Menu */
+    .nav .hamburger {
+        display: block;
+        font-size: 32px;
+        cursor: pointer;
+        z-index: 1001;
+        user-select: none;
+        margin-right: 0;
+        color: #2a2857;
+    }
+    
+    .nav .txt,
+    .nav h3 {
+        display: none;
+    }
+    
+    .nav {
+        width: calc(100% - 30px);
+        margin: 15px 15px 0 15px;
+        left: 0;
+        transition: all 0.3s ease-in-out;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    
+    .right-nav img {
+        height: 35px;
+        width: auto;
+        margin: 0;
+    }
+    
+    .nav .icon {
+        height: 25px;
+        width: 25px;
+        margin: 0;
+    }
+    
+    .nav.open {
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        top: 0;
+        left: 0;
+        border: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+        padding-top: 100px;
+        background-color: white;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    
+    .nav.open .right-nav {
+        margin-top: 0;
+        margin-right: 0;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+    }
+    
+    .nav.open .icon {
+        position: absolute;
+        top: 20px;
+        right: 80px;
+        margin: 0;
+        height: 25px;
+        width: 25px;
+    }
+    
+    .nav.open .hamburger {
+        position: absolute;
+        top: 15px;
+        right: 30px;
+    }
+    
+    .nav.open .txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        position: static;
+        transform: none;
+        margin-top: 60px;
+        opacity: 1;
+    }
+    
+    .nav.open .txt h2 {
+        font-size: 32px;
+        font-family: 'Reckless', serif;
+        color: #2a2857;
+        font-weight: 500;
+    }
+    
+    .nav.open h3 {
+        display: block;
+        font-size: 16px;
+        color: #2a2857;
+        margin: 5px 0;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    /* 2. Header Section */
+    #header {
+        height: 100vh;
+        min-height: auto;
+        background-color: #faf8eb;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    #header .img1 {
+        height: 100vh;
+        object-fit: cover;
+        width: 100%;
+    }
+    .mtxt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        right: auto;
+        width: 95%;
+        max-width: 400px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        z-index: 2;
+    }
+    .mtxt h1 {
+        font-size: 44px;
+        line-height: 1.1;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+        color: white;
+    }
+    .mtxt p {
+        font-size: 15px;
+        line-height: 1.4;
+        text-shadow: 0 1px 5px rgba(0,0,0,0.6);
+        color: white;
+    }
+    .mtxt p br {
+        display: none;
+    }
+    .mtxt button {
+        width: 170px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    /* 3. Explore Section */
+    #explore {
+        height: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .title h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        line-height: 1.2;
+        text-align: center;
+    }
+    .title h1 br {
+        display: none;
+    }
+    .btn {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .btn button {
+        position: static;
+        transform: rotate(-5deg);
+        margin: 0;
+    }
+    .products {
+        margin-top: 40px;
+        padding: 20px;
+        gap: 20px;
+    }
+    .card {
+        min-width: 280px;
+    }
+    .img-box, .img-box2, .img-box3, .img-box4, .img-box5, .img-box6, .img-box7, .img-box8 {
+        width: 280px;
+        height: 280px;
+    }
+    .img-box img, .img-box2 img, .img-box3 img, .img-box4 img, .img-box5 img, .img-box6 img, .img-box7 img, .img-box8 img {
+        width: 220px;
+    }
+    .card h2 {
+        font-size: 24px;
+        margin-top: 15px;
+        text-align: center;
+    }
+    .card h4 {
+        margin: 10px 0;
+        font-size: 16px;
+        text-align: center;
+    }
+    .card p {
+        font-size: 14px;
+        max-width: 280px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .rating h1 {
+        margin-top: -115px;
+    }
+    .rating h2 {
+        margin-top: -121px;
+    }
+    .lstbtn {
+        margin-top: 30px;
+        padding-bottom: 40px;
+    }
+    .lstbtn button {
+        margin-top: 10px;
+    }
+
+    /* 4. Discover Section */
+    #discover {
+        height: auto;
+        position: relative;
+        padding: 50px 15px;
+        display: block;
+        text-align: center;
+    }
+    #discover .disc {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #discover .disc button {
+        position: static;
+        margin: 0;
+        transform: rotate(-5deg);
+    }
+    .typ {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .typ h1 {
+        position: static;
+        margin: 0;
+        font-size: 32px;
+        line-height: 1.2;
+    }
+    .typ h1 br {
+        display: none;
+    }
+    #discover .txt {
+        position: static;
+        transform: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    #discover .txt input {
+        position: static;
+        margin: 0;
+        width: 90%;
+        max-width: 400px;
+        height: 60px;
+        font-size: 24px;
+    }
+    .or {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .or p {
+        position: static;
+        margin: 0;
+        font-size: 14px;
+    }
+    
+    .btna, .btnb, .btnc, .btnd, .btne, .btnf, .btng, .btnh, .btni, .btnj, .btnk, .btnl, .btnm, .btnn, .btno, .btnp {
+        position: static;
+        display: inline-block;
+        margin: 6px;
+    }
+    .btna button, .btnb button, .btnc button, .btnd button, .btne button, .btnf button, .btng button, .btnh button, .btni button, .btnj button, .btnk button, .btnl button, .btnm button, .btnn button, .btno button, .btnp button {
+        position: static;
+        margin: 0;
+        width: auto;
+        padding: 5px 15px;
+        font-size: 20px;
+        height: auto;
+        min-height: 45px;
+    }
+
+    /* 5. Origins Section */
+    #origins {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 60px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #2a2857;
+        overflow: hidden;
+    }
+    #origins .bg-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.5;
+        z-index: 1;
+    }
+    #origins .icon {
+        position: static;
+        margin: 0 auto 20px auto;
+        height: 80px;
+        width: 80px;
+        z-index: 2;
+    }
+    .txt-1 {
+        position: relative;
+        z-index: 2;
+        margin-top: 10px;
+    }
+    .txt-1 h1 {
+        position: static;
+        transform: none;
+        font-size: 55px;
+        line-height: 1.1;
+        margin: 10px 0;
+    }
+    .btn-12 {
+        position: relative;
+        z-index: 2;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .btn-12 button {
+        position: static;
+        margin: 0;
+        font-size: 32px;
+        height: 55px;
+        width: 180px;
+        transform: rotate(-5deg);
+    }
+    .txt-2 {
+        position: relative;
+        z-index: 2;
+        margin: 20px 0;
+        width: 100%;
+    }
+    .txt-2 p {
+        position: static;
+        transform: none;
+        font-size: 18px;
+        line-height: 1.4;
+        margin: 5px 0;
+        color: white;
+    }
+    .txt-2 br {
+        display: none;
+    }
+    .svg {
+        position: relative;
+        z-index: 2;
+        transform: none;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+        width: auto;
+    }
+    .svg br {
+        display: none;
+    }
+    .svg img {
+        margin: 0;
+    }
+    .btn-9 {
+        position: relative;
+        z-index: 2;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .btn-9 button {
+        position: static;
+        margin: 0;
+    }
+
+    /* 6. Reviews Section */
+    #reviews {
+        height: auto;
+        padding: 60px 15px;
+    }
+    .btn-11 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .btn-11 button {
+        position: static;
+        margin: 0;
+        transform: rotate(-2deg);
+    }
+    .txt-rev {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .txt-rev h1 {
+        position: static;
+        margin: 10px 0;
+        font-size: 32px;
+        line-height: 1.2;
+    }
+    .review-container {
+        margin-top: 20px;
+        padding: 10px;
+        gap: 15px;
+    }
+    .review-card {
+        width: 290px;
+        height: 480px;
+    }
+    .review-text h2 {
+        font-size: 24px;
+    }
+    .review-text p {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+    .product-box {
+        height: 110px;
+        padding: 10px;
+    }
+    .product-box h3 {
+        font-size: 13px;
+        margin-left: 10px;
+    }
+    .product-box button {
+        width: 70px;
+        height: 48px;
+        font-size: 15px;
+    }
+
+    /* 7. Cafe Section */
+    #cafe-dec {
+        position: relative;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .img {
+        width: 100%;
+        height: 300px;
+    }
+    .img .imgg {
+        position: static;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .txt-00 {
+        position: relative;
+        width: 100%;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .txt-00 h1 {
+        position: static;
+        margin: 0 0 15px 0;
+        font-size: 44px;
+        line-height: 1.1;
+    }
+    .txt-00 h2 {
+        position: static;
+        margin: 0 0 25px 0;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    .txt-00 h2 br {
+        display: none;
+    }
+    .txt-00 button {
+        position: static;
+        margin: 0;
+    }
+
+    /* 8. Lattes Section */
+    #lattes {
+        position: relative;
+        height: auto;
+        margin-top: 0;
+        padding: 50px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #lattes .icon-111 {
+        position: static;
+        margin: 0 auto 20px auto;
+        height: 100px;
+        width: 100px;
+    }
+    .discrip {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .discrip h1 {
+        position: static;
+        margin: 10px 0;
+        font-size: 36px;
+        line-height: 1.2;
+    }
+    .discrip p {
+        position: static;
+        margin: 10px 0 20px 0;
+        font-size: 14px;
+    }
+    .discrip .b-1 {
+        margin-bottom: 30px;
+    }
+    .discrip .b-1 button {
+        position: static;
+        transform: rotate(-2deg);
+        font-size: 32px;
+        height: 55px;
+        width: 180px;
+        margin: 0;
+    }
+    #pro-cat {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .cho-card {
+        position: relative;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        padding: 30px 20px;
+        margin: 20px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .pr-img {
+        position: static;
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        margin: 0 0 20px 0;
+    }
+    .discrip-12 {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .discrip-12 h1 {
+        position: static;
+        margin: 0 0 10px 0;
+        font-size: 36px;
+        line-height: 1.2;
+    }
+    .discrip-12 p {
+        position: static;
+        margin: 0 0 20px 0;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    .discrip-12 p br {
+        display: none;
+    }
+    .discrip-12 .b-12 {
+        margin-bottom: 20px;
+    }
+    .discrip-12 .b-12 button {
+        position: static;
+        transform: rotate(-2deg);
+        font-size: 32px;
+        height: 55px;
+        width: 100px;
+        margin: 0;
+    }
+    .txt-001 button {
+        position: static;
+        margin: 0;
+    }
+
+    /* 9. Journal Section */
+    #journal {
+        position: relative;
+        height: auto;
+        margin-top: 0;
+        padding: 60px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #journal h1 {
+        position: static;
+        margin: 0 0 40px 0;
+        font-size: 32px;
+        line-height: 1.3;
+        text-align: center;
+    }
+    .card-containerr {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .card-11 {
+        min-width: 200px;
+    }
+    .card-11 img {
+        height: 250px;
+    }
+    .card-11 p {
+        font-size: 16px;
+    }
+    .jou-1 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .jou-1 button {
+        position: static;
+        transform: rotate(-2deg);
+        font-size: 32px;
+        height: 55px;
+        width: 150px;
+        margin: 0;
+    }
+    .btn-07 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .btn-07 button {
+        position: static;
+        margin: 0;
+    }
+
+    /* 10. Great Section */
+    #great {
+        position: relative;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #great .im-1 {
+        position: static;
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        margin-top: 0;
+    }
+    #great .contain {
+        position: relative;
+        width: calc(100% - 30px);
+        margin: 20px 15px;
+        height: auto;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #f26411;
+    }
+    .contain h1 {
+        position: static;
+        margin: 0 0 15px 0;
+        font-size: 36px;
+        line-height: 1.2;
+    }
+    .contain p {
+        position: static;
+        margin: 0 0 25px 0;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    .contain p br {
+        display: none;
+    }
+    .bc-1 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .bc-1 button {
+        position: static;
+        margin: 0;
+    }
+
+    /* 11. Footer Section */
+    #footer {
+        position: relative;
+        height: auto;
+        margin-top: 0;
+        padding: 50px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #bfdbff;
+    }
+    .footer-top {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-top h2 {
+        position: static;
+        margin: 0 0 15px 0;
+        font-size: 22px;
+    }
+    .footer-top p {
+        position: static;
+        margin: 0 0 20px 0;
+        font-size: 18px;
+        line-height: 1.3;
+    }
+    .footer-top p br {
+        display: none;
+    }
+    .footer-top input {
+        width: 85%;
+        max-width: 300px;
+        margin: 0 0 15px 0;
+    }
+    .footer-top button {
+        width: 50%;
+        max-width: 150px;
+        margin: 0 0 20px 0;
+    }
+    .social-icons {
+        position: static;
+        margin: 10px 0 30px 0;
+        justify-content: center;
+    }
+    .accordion-box {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .footer-side {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    .footer-side .logo {
+        position: static;
+        margin: 0;
+        height: 80px;
+        width: 220px;
+    }
+    .footer-img {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .footer-img .f-img {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+    .footer-info {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .footer-info p {
+        position: static;
+        margin: 0;
+        text-align: center;
+    }
+}
