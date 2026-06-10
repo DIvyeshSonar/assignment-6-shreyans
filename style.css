@@ -1677,9 +1677,6 @@ p a{
     text-transform: lowercase;
 }
 
-/* --- Responsive & Hamburger Menu styling --- */
-
-/* Hide hamburger by default on desktop */
 .nav .hamburger {
     display: none;
 }
